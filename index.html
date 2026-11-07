@@ -1,0 +1,1372 @@
+
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#17142a">
+  <title>Абай | Отыз екінші қара сөз</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<div class="app">
+
+<main class="main">
+
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-icon">📖</span>
+    <div>
+      <strong>ABAI LITERATURE</strong>
+      <small>Қазақ әдебиеті • 1-курс • 80 минут</small>
+    </div>
+  </div>
+
+  <div class="top-actions">
+    <div class="clock">
+      ⏱ <span id="totalClock">00:00</span>
+      <small>/ 80:00</small>
+    </div>
+
+    <div class="clock">
+      ⌛ <span id="pageClock">02:00</span>
+    </div>
+
+    <button class="btn outline" id="fullscreenBtn">
+      ⛶ Толық экран
+    </button>
+  </div>
+</header>
+
+<!-- 0. БАСТЫ БЕТ -->
+
+<section class="screen active" id="page-0">
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="eyebrow">
+        ҚАЗАҚ ӘДЕБИЕТІ • АБАЙ МҰРАСЫ
+      </span>
+
+      <h1>
+        Отыз екінші
+        <span>қара сөз</span>
+      </h1>
+
+      <p class="hero-lead">
+        Білімге құштарлық.
+        Ақиқатқа адалдық.
+        Ойды дамыту.
+        Мінездің беріктігі.
+      </p>
+
+      <div class="hero-stats">
+        <div>
+          <b>80</b>
+          <small>минут</small>
+        </div>
+        <div>
+          <b>6</b>
+          <small>негізгі шарт</small>
+        </div>
+        <div>
+          <b>24</b>
+          <small>оқушыға дейін</small>
+        </div>
+        <div>
+          <b>3</b>
+          <small>команда</small>
+        </div>
+      </div>
+
+      <button class="btn primary large"
+              onclick="goTo(1)">
+        Сабақты бастау →
+      </button>
+    </div>
+
+    <div class="hero-photo">
+      <img
+        src="https://commons.wikimedia.org/wiki/Special:FilePath/Abai%20Kunanbaev.jpg"
+        alt="Абай Құнанбайұлының портреті">
+      <span>Абай Құнанбайұлы · 1845–1904</span>
+    </div>
+  </div>
+
+  <h2>Сабақтың мақсаттары</h2>
+
+  <div class="cards three">
+    <article class="card">
+      <div class="emoji">📜</div>
+      <h3>Шығарманы түсіну</h3>
+      <p>
+        Отыз екінші қара сөздің
+        тақырыбын, идеясын,
+        құрылымын анықтау.
+      </p>
+    </article>
+
+    <article class="card">
+      <div class="emoji">🧠</div>
+      <h3>Ойды талдау</h3>
+      <p>
+        Ғылым үйренудің алты шартын
+        мәтінге сүйене отырып
+        түсіндіру.
+      </p>
+    </article>
+
+    <article class="card">
+      <div class="emoji">🎯</div>
+      <h3>Өмірмен байланыстыру</h3>
+      <p>
+        Абайдың кеңесін
+        қазіргі студенттің
+        оқу тәжірибесінде қолдану.
+      </p>
+    </article>
+  </div>
+
+  <div class="callout">
+    <b>Негізгі сұрақ:</b>
+    Ғылым үйрену үшін білімнің өзі
+    жеткілікті ме, әлде адамға
+    дұрыс ниет, талап және
+    берік мінез де қажет пе?
+  </div>
+</section>
+
+<!-- 1. АБАЙ ЖӘНЕ ҚАРА СӨЗ -->
+
+<section class="screen" id="page-1">
+  <div class="eyebrow">01 • ТҮСІНДІРУ • 3 МИНУТ</div>
+
+  <h1>📚 Абай және қара сөз жанры</h1>
+
+  <p class="lead">
+    Абай Құнанбайұлы —
+    қазақтың ұлы ақыны,
+    ойшылы, ағартушысы.
+    Оның қара сөздері —
+    адам, қоғам, білім және
+    мінез туралы философиялық
+    прозалық толғаныстар.
+  </p>
+
+  <div class="media-grid">
+    <figure class="photo">
+      <img
+        loading="lazy"
+        src="https://commons.wikimedia.org/wiki/Special:FilePath/Abai%20Kunanbaev.jpg"
+        alt="Абай Құнанбайұлы">
+      <figcaption>
+        Абай Құнанбайұлы.
+        Wikimedia Commons.
+      </figcaption>
+    </figure>
+
+    <figure class="photo">
+      <img
+        loading="lazy"
+        src="https://commons.wikimedia.org/wiki/Special:FilePath/First%20Collection%20of%20Abay.jpg"
+        alt="Абай шығармаларының 1909 жылғы алғашқы жинағы">
+      <figcaption>
+        Абай шығармаларының
+        1909 жылы жарық көрген
+        алғашқы жинағы.
+        Wikimedia Commons.
+      </figcaption>
+    </figure>
+  </div>
+
+  <div class="cards">
+    <article class="card">
+      <h3>Қара сөз дегеніміз не?</h3>
+      <p>
+        Өлеңнен бөлек жазылған,
+        ой мен пікірді, ғибрат пен
+        тұжырымды прозалық
+        түрде жеткізетін шығарма.
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>Абайдың ағартушылық идеясы</h3>
+      <p>
+        Адамның дамуы білімге,
+        еңбектенуге, өз мінезін
+        тәрбиелеуге және
+        саналы әрекетке байланысты.
+      </p>
+    </article>
+  </div>
+
+  <div class="callout">
+    <b>Маңызды:</b>
+    Отыз екінші сөз —
+    білім-ғылым үйренуді
+    мақсат еткен адамдарға
+    бағытталған ақыл-кеңес.
+  </div>
+</section>
+
+<!-- 2. ШЫҒАРМАНЫҢ ИДЕЯСЫ -->
+
+<section class="screen" id="page-2">
+  <div class="eyebrow">02 • ТҮСІНДІРУ • 3 МИНУТ</div>
+
+  <h1>💡 Шығарманың негізгі идеясы</h1>
+
+  <p class="lead">
+    Абай ғылым үйренудің
+    сыртқы көрінісінен гөрі
+    адамның ішкі ниетіне,
+    ақиқатты іздеуіне және
+    мінезіне назар аударады.
+  </p>
+
+  <blockquote class="literary-quote">
+    «Білім-ғылым үйренбекке талап
+    қылушыларға әуелі білмек керек».
+    <small>Абай, «Отыз екінші сөз»</small>
+  </blockquote>
+
+  <div class="cards three">
+    <article class="card">
+      <div class="emoji">❤️</div>
+      <h3>Ықылас</h3>
+      <p>
+        Білімді шын қызығушылықпен
+        іздеу.
+      </p>
+    </article>
+
+    <article class="card">
+      <div class="emoji">⚖️</div>
+      <h3>Ақиқат</h3>
+      <p>
+        Ойды жеңдіруге емес,
+        шындықты тануға ұмтылу.
+      </p>
+    </article>
+
+    <article class="card">
+      <div class="emoji">🛡️</div>
+      <h3>Беріктік</h3>
+      <p>
+        Білгенін сақтайтын
+        мінез бен қайратты дамыту.
+      </p>
+    </article>
+  </div>
+
+  <div class="idea-map">
+    <span>ТАЛАП</span>
+    <b>+</b>
+    <span>АҚИҚАТ</span>
+    <b>+</b>
+    <span>ОЙ</span>
+    <b>+</b>
+    <span>МІНЕЗ</span>
+  </div>
+
+  <div class="callout">
+    <b>Талдау:</b>
+    Тек баға үшін оқу мен
+    білімге шын қызығып оқудың
+    айырмашылығы қандай?
+  </div>
+</section>
+
+<!-- 3. БІРІНШІ ШАРТ -->
+
+<section class="screen" id="page-3">
+  <div class="eyebrow">03 • БІРІНШІ ШАРТ • 3 МИНУТ</div>
+
+  <h1>① Білімге шынайы құштарлық</h1>
+
+  <blockquote class="literary-quote">
+    «...бір ғана білмектіктің
+    өзін дәулет білсең...»
+    <small>Абай, «Отыз екінші сөз»</small>
+  </blockquote>
+
+  <div class="cards">
+    <article class="card">
+      <h3>Абайдың ойы</h3>
+      <p>
+        Адам ғылымды тек пайда,
+        атақ немесе басқалардан
+        жоғары көріну үшін емес,
+        білімнің өзін бағалап
+        үйренуі керек.
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>Қазіргі өмірдегі мысал</h3>
+      <p>
+        Студент бағдарламалауды
+        тек сертификат алу үшін
+        емес, нақты мәселені
+        шешуді үйрену үшін
+        зерттейді.
+      </p>
+    </article>
+  </div>
+
+  <div class="comparison">
+    <div>
+      <h3>Сыртқы мақсат</h3>
+      <p>
+        Тек баға, мақтау,
+        бедел үшін оқу.
+      </p>
+    </div>
+    <div>
+      <h3>Ішкі ынта</h3>
+      <p>
+        Білмегеніңді білуге
+        шынайы ұмтылу.
+      </p>
+    </div>
+  </div>
+
+  <div class="callout">
+    <b>Ойлан:</b>
+    Неліктен білімнің өзіне
+    қызыққан адам ұзақ уақыт
+    үйренуге бейім болады?
+  </div>
+</section>
+
+<!-- 4. ЕКІНШІ ШАРТ -->
+
+<section class="screen" id="page-4">
+  <div class="eyebrow">04 • ЕКІНШІ ШАРТ • 3 МИНУТ</div>
+
+  <h1>② Ғылымды ақиқат үшін үйрену</h1>
+
+  <blockquote class="literary-quote">
+    «...ақиқат мақсатпен
+    білмек үшін үйренбек керек».
+    <small>Абай, «Отыз екінші сөз»</small>
+  </blockquote>
+
+  <p class="lead">
+    Абай пікірталасты толық
+    терістемейді. Бірақ оның
+    мақсаты шындыққа жету
+    емес, тек қарсыласын жеңу
+    болып кетсе, пайдасы азаятынын айтады.
+  </p>
+
+  <div class="comparison">
+    <div>
+      <h3>❌ Бос айтыс</h3>
+      <p>
+        «Мен міндетті түрде
+        жеңуім керек!»
+      </p>
+      <p>
+        Қарсы пікірді тыңдамау,
+        дәлелге мән бермеу.
+      </p>
+    </div>
+
+    <div>
+      <h3>✅ Ғылыми талқылау</h3>
+      <p>
+        «Қай пікір шындыққа
+        көбірек сәйкес?»
+      </p>
+      <p>
+        Дерек іздеу,
+        қатені мойындау,
+        қорытынды жасау.
+      </p>
+    </div>
+  </div>
+
+  <div class="callout">
+    <b>Мысал:</b>
+    Екі студент бір тарихи
+    дерек туралы келіспейді.
+    Қайсысы Абай кеңесіне сай:
+    дауысын көтергені ме,
+    әлде сенімді дерек
+    тауып дәлелдегені ме?
+  </div>
+</section>
+
+<!-- 5. ҮШІНШІ ШАРТ -->
+
+<section class="screen" id="page-5">
+  <div class="eyebrow">05 • ҮШІНШІ ШАРТ • 3 МИНУТ</div>
+
+  <h1>③ Ақиқатқа берік болу</h1>
+
+  <p class="lead">
+    Адам ойланып, ізденіп,
+    дұрыс екеніне көзі жеткен
+    білімін қадірлеуі және
+    оны өз әрекетінде қолдануы керек.
+  </p>
+
+  <div class="card featured">
+    <h3>Абайдың ойы</h3>
+    <p>
+      Шындықты түсінудің өзі
+      жеткіліксіз. Адам өзінің
+      сенімді қорытындысын
+      мінезі мен ісінде ұстануы тиіс.
+    </p>
+  </div>
+
+  <div class="steps">
+    <div class="step"><b>1</b><span>Ақпаратты тыңдау</span></div>
+    <div class="step"><b>2</b><span>Тексеру және ойлану</span></div>
+    <div class="step"><b>3</b><span>Нақты дәлелге сүйену</span></div>
+    <div class="step"><b>4</b><span>Дұрыс білімді іс жүзінде қолдану</span></div>
+  </div>
+
+  <div class="callout">
+    <b>Талдау:</b>
+    Ақиқатқа берік болу —
+    ешқашан пікір өзгертпеу
+    деген сөз емес.
+    Жаңа сенімді дәлел келсе,
+    бұрынғы қатені түзете білу
+    де шындыққа адалдықты көрсетеді.
+  </div>
+</section>
+
+<!-- 6. ТӨРТІНШІ ШАРТ -->
+
+<section class="screen" id="page-6">
+  <div class="eyebrow">06 • ТӨРТІНШІ ШАРТ • 3 МИНУТ</div>
+
+  <h1>④ Мұлахаза мен мұхафаза</h1>
+
+  <p class="lead">
+    Абай білімді көбейтудің
+    екі маңызды қабілетін
+    атайды: мұлахаза және мұхафаза.
+  </p>
+
+  <div class="comparison">
+    <div>
+      <div class="emoji">🧠</div>
+      <h3>Мұлахаза</h3>
+      <p>
+        Ой елегінен өткізу,
+        зерделеу, салыстыру,
+        мәнін түсіну.
+      </p>
+      <p>
+        «Бұл пікір неліктен дұрыс?»
+      </p>
+    </div>
+
+    <div>
+      <div class="emoji">🗃️</div>
+      <h3>Мұхафаза</h3>
+      <p>
+        Білгенді жадыда сақтау,
+        бекіту, қажет кезде
+        қайта еске түсіру.
+      </p>
+      <p>
+        «Үйренгенімді қалай ұмытпаймын?»
+      </p>
+    </div>
+  </div>
+
+  <div class="study-method">
+    <h3>Білімді бекітудің төрт қадамы</h3>
+    <div class="idea-map">
+      <span>ОҚУ</span>
+      <b>→</b>
+      <span>ОЙЛАУ</span>
+      <b>→</b>
+      <span>ҚАЙТАЛАУ</span>
+      <b>→</b>
+      <span>ҚОЛДАНУ</span>
+    </div>
+  </div>
+
+  <div class="callout">
+    <b>Мысал:</b>
+    Мәтінді жатқа айту —
+    есте сақтаудың көрінісі.
+    Ал оның идеясын жаңа
+    жағдаятқа қолдану —
+    терең түсінгеніңнің белгісі.
+  </div>
+</section>
+
+<!-- 7. БЕСІНШІ ШАРТ -->
+
+<section class="screen" id="page-7">
+  <div class="eyebrow">07 • БЕСІНШІ ШАРТ • 3 МИНУТ</div>
+
+  <h1>⑤ Уайымсыз салғырттықтан сақтану</h1>
+
+  <p class="lead">
+    Абай білімге кедергі
+    келтіретін ой кеселдерінен,
+    әсіресе уайымсыз
+    салғырттықтан сақ болуға шақырады.
+  </p>
+
+  <div class="cards three">
+    <article class="card">
+      <div class="emoji">⌛</div>
+      <h3>Уақытты бағаламау</h3>
+      <p>
+        Маңызды істі себепсіз
+        кейінге қалдыру.
+      </p>
+    </article>
+
+    <article class="card">
+      <div class="emoji">📱</div>
+      <h3>Алаңдау</h3>
+      <p>
+        Ұсақ қызықтарға
+        беріліп, негізгі
+        мақсаттан алыстау.
+      </p>
+    </article>
+
+    <article class="card">
+      <div class="emoji">📝</div>
+      <h3>Жауапкершілік</h3>
+      <p>
+        Оқу жоспарын жасап,
+        мақсатқа сай әрекет ету.
+      </p>
+    </article>
+  </div>
+
+  <div class="callout">
+    <b>Назар аудар:</b>
+    Абай сынайтын салғырттық —
+    мақсатқа немқұрайды қарау.
+    Ал демалу мен күш жинау
+    білім алуға қарсы емес.
+  </div>
+</section>
+
+<!-- 8. АЛТЫНШЫ ШАРТ -->
+
+<section class="screen" id="page-8">
+  <div class="eyebrow">08 • АЛТЫНШЫ ШАРТ • 3 МИНУТ</div>
+
+  <h1>⑥ Мінез — ақыл мен білімнің сауыты</h1>
+
+  <blockquote class="literary-quote">
+    «Ғылымды, ақылды сақтайтұғын
+    мінез деген сауыты болады».
+    <small>Абай, «Отыз екінші сөз»</small>
+  </blockquote>
+
+  <div class="shield-visual">
+    <div class="shield">🛡️</div>
+    <div>
+      <h3>Мінездің беріктігі</h3>
+      <p>
+        Адамның дұрыс деп
+        таныған ісін ұстануы,
+        орынсыз ықпалға
+        ермеуі, ар мен
+        ақылды құрметтеуі.
+      </p>
+    </div>
+  </div>
+
+  <div class="cards three">
+    <article class="card">
+      <h3>Тұрақтылық</h3>
+      <p>Мақсатқа біртіндеп, жүйелі ұмтылу.</p>
+    </article>
+
+    <article class="card">
+      <h3>Қайрат</h3>
+      <p>Қиындық кездессе де еңбектенуді жалғастыру.</p>
+    </article>
+
+    <article class="card">
+      <h3>Ар мен ақыл</h3>
+      <p>Әрекетті саналы әрі адамгершілікпен таңдау.</p>
+    </article>
+  </div>
+
+  <div class="callout">
+    <b>Метафора:</b>
+    Сауыт жауынгерді қорғайтын
+    болса, берік мінез
+    адамның білімі мен
+    ақылын сақтауға
+    көмектеседі.
+  </div>
+</section>
+
+<!-- 9. ҚЫСҚА ВИДЕОЛАР -->
+
+<section class="screen" id="page-9">
+  <div class="eyebrow">09 • ВИДЕО • 5 МИНУТ</div>
+
+  <h1>▶️ Абайдың отыз екінші сөзі</h1>
+
+  <p class="lead">
+    Ұзақ фильм емес, екі
+    қысқа үзінді көрсетіледі.
+    Біріншісі — мәтінді тыңдау,
+    екіншісі — қара сөзді талдау.
+  </p>
+
+  <div class="toolbar">
+    <button class="btn primary" data-video="0">
+      ▶ Қара сөзді тыңдау · 2 мин
+    </button>
+
+    <button class="btn outline" data-video="1">
+      ▶ Сабақты талдау · 2 мин
+    </button>
+
+    <button class="btn danger" id="stopVideo">
+      ⏹ Тоқтату
+    </button>
+  </div>
+
+  <div class="video-frame">
+    <iframe
+      id="videoPlayer"
+      title="Абайдың отыз екінші қара сөзі"
+      src="about:blank"
+      allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <p class="feedback" id="videoTitle">
+    Қысқа видеоны таңда.
+  </p>
+
+  <a id="videoExternal"
+     href="https://www.youtube.com/watch?v=BpykeHlkvUE"
+     target="_blank"
+     rel="noopener noreferrer">
+    YouTube-та бөлек ашу
+  </a>
+
+  <div class="card">
+    <h3>🎧 Аудионұсқа</h3>
+    <p>
+      Мұхтар Әуезов атындағы
+      Әдебиет және өнер
+      институтындағы мәтіннің
+      аудионұсқасын тыңдауға болады.
+    </p>
+
+    <audio controls preload="none">
+      <source
+        src="https://auezovinstitute.kz/wp-content/uploads/2025/11/32qarasoz.mp3"
+        type="audio/mpeg">
+      Браузер аудионы қолдамайды.
+    </audio>
+  </div>
+
+  <div class="callout">
+    <b>Бір минуттық талқылау:</b>
+    Абай ғылымды үйренудегі
+    ең маңызды қасиет
+    ретінде нені атайды?
+  </div>
+</section>
+
+<!-- 10. КОНСПЕКТ -->
+
+<section class="screen" id="page-10">
+  <div class="eyebrow">10 • КОНСПЕКТ • 12 МИНУТ</div>
+
+  <h1>📚 Дәптерге арналған толық конспект</h1>
+
+  <p class="lead">
+    Төмендегі 18 бөлімнен
+    алғашқы 12-сін негізгі
+    конспект ретінде жазуға болады.
+    Қалғандары күрделі тапсырмаларға
+    дайындыққа арналған.
+  </p>
+
+  <div class="notes" id="notesContent">
+    <h2>
+      Абай Құнанбайұлы.
+      «Отыз екінші қара сөз»
+    </h2>
+
+    <h3>1. Автор</h3>
+    <p>
+      Абай Құнанбайұлы —
+      қазақ әдебиетінің ұлы
+      өкілі, ақын, ойшыл
+      және ағартушы.
+      Ол адамгершілік,
+      білім, еңбек, мінез
+      тақырыптарына ерекше
+      назар аударған.
+    </p>
+
+    <h3>2. Жанры</h3>
+    <p>
+      «Отыз екінші сөз» —
+      философиялық және
+      дидактикалық сипаттағы
+      прозалық шығарма.
+      Автор оқырманға
+      ғылым үйренудің
+      шарттарын түсіндіреді.
+    </p>
+
+    <h3>3. Тақырыбы</h3>
+    <p>
+      Білім мен ғылымды
+      үйренудің жолдары,
+      адамның талаптануы,
+      ақиқатқа ұмтылуы
+      және мінездің беріктігі.
+    </p>
+
+    <h3>4. Негізгі идеясы</h3>
+    <p>
+      Адам білімді шынайы
+      ниетпен үйренуі керек.
+      Ғылымға адалдық,
+      ойлау қабілеті,
+      есте сақтау және
+      тұрақты мінез
+      білімнің нәтижелі
+      болуына көмектеседі.
+    </p>
+
+    <h3>5. Бірінші шарт</h3>
+    <p>
+      Абай білім-ғылымға
+      шын құмар болуды
+      талап етеді.
+      Адам білудің өзін
+      құндылық деп түсініп,
+      жаңа білім алған сайын
+      одан рухани қанағат
+      табуы керек.
+    </p>
+
+    <h3>6. Екінші шарт</h3>
+    <p>
+      Ғылымды ақиқат үшін
+      үйрену қажет.
+      Білімді тек біреуді
+      жеңу немесе дау
+      шығару үшін
+      пайдалануға болмайды.
+      Ғылыми пікірталас
+      шындықты іздеуге
+      бағытталуы тиіс.
+    </p>
+
+    <h3>7. Үшінші шарт</h3>
+    <p>
+      Адам өзі дәлелдеп
+      түсінген ақиқатты
+      қадірлеуі және
+      дұрыс білімін
+      өмірде қолдануы керек.
+      Сенімді қорытынды
+      адамның әрекетіне
+      әсер етуі тиіс.
+    </p>
+
+    <h3>8. Төртінші шарт</h3>
+    <p>
+      Білімді көбейтудің
+      екі құралы бар:
+      мұлахаза және мұхафаза.
+      Мұлахаза — ой елегінен
+      өткізу, талдау,
+      зерделеу.
+      Мұхафаза — білгенді
+      есте сақтау және бекіту.
+    </p>
+
+    <h3>9. Бесінші шарт</h3>
+    <p>
+      Білім алушы адам
+      ой кеселдерінен,
+      әсіресе уайымсыз
+      салғырттықтан
+      сақтануы тиіс.
+      Немқұрайдылық
+      талап пен ізденісті
+      әлсіретеді.
+    </p>
+
+    <h3>10. Алтыншы шарт</h3>
+    <p>
+      Абай білім мен
+      ақылды сақтайтын
+      мінезді сауытқа
+      теңейді.
+      Адамның ар-ұяты,
+      қайраты және
+      табандылығы
+      берік болуы керек.
+    </p>
+
+    <h3>11. Көркемдік ерекшелігі</h3>
+    <p>
+      Шығармада ақыл айту,
+      философиялық ой қорыту,
+      салыстыру, риторикалық
+      сұрақ және метафора
+      қолданылады.
+      «Мінез — сауыт»
+      бейнесі ерекше мағыналы.
+    </p>
+
+    <h3>12. Тәрбиелік мәні</h3>
+    <p>
+      Қара сөз студенттерді
+      білімге адал болуға,
+      өз ойын дәлелдеуге,
+      уақытты бағалауға,
+      табандылыққа және
+      саналы әрекетке
+      тәрбиелейді.
+    </p>
+
+    <hr>
+
+    <h2>Қосымша талдау</h2>
+
+    <h3>13. Талап ұғымы</h3>
+    <p>
+      Талап — адамның
+      білім алуға,
+      жаңа нәрсе үйренуге
+      деген саналы
+      ұмтылысы.
+      Абай талаптың
+      дұрыс бағытта
+      болуы маңызды
+      екенін көрсетеді.
+    </p>
+
+    <h3>14. Бахас ұғымы</h3>
+    <p>
+      Бахас — пікірталас,
+      дауласу мағынасындағы
+      сөз. Абай пікірталастың
+      білімді тереңдетуге
+      көмектесетінін
+      мойындайды, бірақ
+      тек жеңу мақсатындағы
+      айтысты сынайды.
+    </p>
+
+    <h3>15. Мұлахаза</h3>
+    <p>
+      Мұлахаза —
+      мәліметті салыстыру,
+      пайымдау, дәлелдеу,
+      мағынасын ашу.
+      Терең ойлану
+      білімді түсінуге
+      мүмкіндік береді.
+    </p>
+
+    <h3>16. Мұхафаза</h3>
+    <p>
+      Мұхафаза —
+      үйренген білімді
+      есте сақтап,
+      саналы түрде
+      бекіту қабілеті.
+      Қайталау мен
+      қолдану оны
+      нығайтады.
+    </p>
+
+    <h3>17. Мінездің сауыты</h3>
+    <p>
+      Сауыт адамның
+      денесін қорғайтын
+      құрал болса,
+      тұрақты мінез
+      ақыл мен білімді
+      орынсыз әсерлерден
+      сақтауға көмектеседі.
+      Бұл — шығармадағы
+      маңызды метафора.
+    </p>
+
+    <h3>18. Қорытынды</h3>
+    <p>
+      Абайдың отыз екінші
+      қара сөзі білім алудың
+      адамгершілік негізін
+      түсіндіреді.
+      Нағыз ғылым
+      шынайы қызығушылықтан,
+      ақиқатқа құрметтен,
+      терең ойлаудан
+      және берік мінезден
+      басталады.
+    </p>
+  </div>
+
+  <div class="toolbar">
+    <button class="btn primary" id="copyNotes">
+      📋 Конспектіні көшіру
+    </button>
+
+    <button class="btn outline"
+            onclick="window.print()">
+      🖨 Басып шығару
+    </button>
+
+    <a class="text-link"
+       href="https://www.gov.kz/org/mfa-vilnius/press/article/details/22062?lang=kk"
+       target="_blank"
+       rel="noopener noreferrer">
+      📖 Толық түпнұсқа мәтін
+    </a>
+  </div>
+</section>
+
+<!-- 11. ҚАТЫСУШЫЛАР -->
+
+<section class="screen" id="page-11">
+  <div class="eyebrow">
+    11 • ТАПСЫРМАЛАРҒА ДАЙЫНДЫҚ • 3 МИНУТ
+  </div>
+
+  <h1>👥 Оқушыларды белгілеу</h1>
+
+  <p class="lead">
+    Оқушылар түсіндіру кезінде
+    таңдалмайды. Тек осы
+    кезеңде қатысатын
+    оқушылар анықталып,
+    тапсырмалар басталады.
+  </p>
+
+  <div class="stats-grid">
+    <div>
+      <small>Қатысады</small>
+      <strong id="presentCount">24</strong>
+    </div>
+
+    <div>
+      <small>Қатыспайды</small>
+      <strong id="absentCount">0</strong>
+    </div>
+
+    <div>
+      <small>Команда</small>
+      <strong id="teamCount">3</strong>
+    </div>
+  </div>
+
+  <div class="toolbar">
+    <button class="btn outline" id="allPresent">
+      ↩ Барлығын қайтару
+    </button>
+
+    <button class="btn outline" id="shuffleTeams">
+      🔀 Командаларды араластыру
+    </button>
+  </div>
+
+  <h2>✅ Қатысатын оқушылар</h2>
+  <div id="presentList" class="student-grid"></div>
+
+  <div class="card">
+    <h3>❌ Қатыспайтын оқушылар</h3>
+    <div id="absentList"></div>
+  </div>
+
+  <p class="feedback" id="attendanceFeedback"></p>
+
+  <h2>Үш команда</h2>
+  <div id="teamRoster" class="team-grid"></div>
+</section>
+
+<!-- 12. РАНДОМ АУЫЗША -->
+
+<section class="screen" id="page-12">
+  <div class="eyebrow">
+    12 • АУЫЗША СҰРАҚТАР • 15 МИНУТ
+  </div>
+
+  <h1>🎤 Random Student — әдеби талдау</h1>
+
+  <p class="lead">
+    Сайт кезекпен емес,
+    кездейсоқ оқушы мен
+    кездейсоқ сұрақты
+    таңдайды. Бағаланған
+    оқушы осы кезеңде
+    қайталанбайды.
+  </p>
+
+  <div class="question-card">
+    <div class="question-meta">
+      <span id="oralProgress">0 / 24</span>
+      <span>Максимум 3 ұпай</span>
+    </div>
+
+    <div class="selected-student" id="oralStudent">
+      🎲 Оқушыны таңдау
+    </div>
+
+    <h2 id="oralQuestion">
+      «Рандом таңдау» батырмасын бас.
+    </h2>
+
+    <div id="oralAnswer"
+         class="answer-box"
+         hidden></div>
+
+    <div class="toolbar">
+      <button class="btn primary" id="oralPick">
+        🎲 Рандом таңдау
+      </button>
+
+      <button class="btn outline" id="oralReveal">
+        👁 Жауап үлгісі
+      </button>
+    </div>
+
+    <div class="toolbar">
+      <button class="btn success oral-grade"
+              data-score="3">✅ 3 ұпай</button>
+
+      <button class="btn outline oral-grade"
+              data-score="2">🟡 2 ұпай</button>
+
+      <button class="btn outline oral-grade"
+              data-score="1">🟠 1 ұпай</button>
+
+      <button class="btn danger oral-grade"
+              data-score="0">❌ 0 ұпай</button>
+    </div>
+
+    <p class="feedback" id="oralFeedback"></p>
+  </div>
+
+  <h2>Жауап берген оқушылар</h2>
+  <div id="oralResults" class="result-grid"></div>
+</section>
+
+<!-- 13. ЖЕКЕ ТЕСТ -->
+
+<section class="screen" id="page-13">
+  <div class="eyebrow">
+    13 • ЖЕКЕ ТЕСТ • 8 МИНУТ
+  </div>
+
+  <h1>🧠 Абайды қаншалықты түсіндің?</h1>
+
+  <p class="lead">
+    Әр қатысушыға қайталанбайтын
+    сұрақ беріледі.
+    Дұрыс жауап үшін
+    2 ұпай есептеледі.
+  </p>
+
+  <div class="question-card">
+    <div class="question-meta">
+      <span id="quizProgress">0 / 24</span>
+      <span>Дұрыс жауап +2</span>
+    </div>
+
+    <div class="selected-student" id="quizStudent">
+      🎲 Оқушыны таңдау
+    </div>
+
+    <h2 id="quizQuestion">
+      «Рандом таңдау» батырмасын бас.
+    </h2>
+
+    <div id="quizOptions" class="choices"></div>
+
+    <div class="toolbar">
+      <button class="btn primary" id="quizPick">
+        🎲 Рандом таңдау
+      </button>
+
+      <button class="btn success" id="quizCheck">
+        ✅ Тексеру
+      </button>
+    </div>
+
+    <p class="feedback" id="quizFeedback"></p>
+  </div>
+
+  <h2>Тест нәтижелері</h2>
+  <div id="quizResults" class="result-grid"></div>
+</section>
+
+<!-- 14. ҮШ КОМАНДАЛЫҚ ОЙЫН -->
+
+<section class="screen" id="page-14">
+  <div class="eyebrow">
+    14 • ҮШ КОМАНДАЛЫҚ ОЙЫН • 9 МИНУТ
+  </div>
+
+  <h1>🏆 ABAI KNOWLEDGE BATTLE</h1>
+
+  <p class="lead">
+    1-ойын — күрделі жағдаяттар.
+    2-ойын — ақиқат детективі.
+    3-ойын — шығармашылық
+    әдеби талдау.
+  </p>
+
+  <div class="game-tabs">
+    <button class="game-tab active" data-game="0">
+      ⚡ 1-ойын
+    </button>
+
+    <button class="game-tab" data-game="1">
+      🕵️ 2-ойын
+    </button>
+
+    <button class="game-tab" data-game="2">
+      ✍️ 3-ойын
+    </button>
+  </div>
+
+  <div class="team-grid" id="gameScores"></div>
+
+  <div class="game-panel active" id="game-0">
+    <h2>⚡ Талап пен ақиқат</h2>
+    <p>
+      Тоғыз күрделі жағдаят.
+      Әр командаға үш сұрақ.
+      Әр дұрыс жауап — 3 ұпай.
+    </p>
+
+    <div class="question-card">
+      <div class="question-meta">
+        <span id="battleProgress">1 / 9</span>
+        <span id="battleTeam"></span>
+      </div>
+
+      <div class="progress-bar">
+        <div id="battleBar"></div>
+      </div>
+
+      <h2 id="battleQuestion"></h2>
+
+      <div id="battleOptions" class="choices"></div>
+
+      <div class="toolbar">
+        <button class="btn success" id="battleCheck">
+          ✅ Жауапты тексеру
+        </button>
+
+        <button class="btn primary" id="battleNext">
+          Келесі жағдаят →
+        </button>
+      </div>
+
+      <p class="feedback" id="battleFeedback"></p>
+    </div>
+  </div>
+
+  <div class="game-panel" id="game-1">
+    <h2>🕵️ Ақиқат детективі</h2>
+
+    <p>
+      Әр команда төрт
+      тұжырымның дұрыс немесе
+      қате екенін табады.
+      Әр дұрыс жауап — 1 ұпай.
+    </p>
+
+    <div id="logicArea"></div>
+  </div>
+
+  <div class="game-panel" id="game-2">
+    <h2>✍️ Абай кеңесін өмірде қолдан</h2>
+
+    <p>
+      Командалар дәптерге
+      немесе А4 қағазына
+      шығармашылық жұмыс
+      орындайды.
+      Максимум 5 ұпай.
+    </p>
+
+    <div id="creativeArea"></div>
+  </div>
+</section>
+
+<!-- 15. ҚОРЫТЫНДЫ -->
+
+<section class="screen" id="page-15">
+  <div class="eyebrow">15 • ҚОРЫТЫНДЫ • 2 МИНУТ</div>
+
+  <h1>🏆 Сабақтың қорытындысы</h1>
+
+  <div class="winner" id="winner"></div>
+
+  <h2>Командалардың ұпайлары</h2>
+  <div class="team-grid" id="finalScores"></div>
+
+  <h2>Оқушылардың жеке бағалары</h2>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Оқушы</th>
+          <th>Команда</th>
+          <th>Ауызша</th>
+          <th>Тест</th>
+          <th>Жалпы</th>
+        </tr>
+      </thead>
+
+      <tbody id="studentResults"></tbody>
+    </table>
+  </div>
+
+  <div class="callout">
+    <b>Қорытынды ой:</b>
+    Абай ғылымды үйренудің
+    негізіне ықыласты,
+    ақиқатты, ойлау мен
+    есте сақтауды,
+    салғырттықтан сақтануды
+    және берік мінезді қояды.
+  </div>
+
+  <div class="toolbar">
+    <button class="btn outline"
+            onclick="window.print()">
+      🖨 Нәтижені шығару
+    </button>
+
+    <button class="btn danger" id="resetLesson">
+      🔄 Жаңа сабақ
+    </button>
+  </div>
+
+  <footer>MADE BY DARKHAN • ABAI LITERATURE</footer>
+</section>
+
+<!-- ТӨМЕНГІ НАВИГАЦИЯ -->
+
+<div class="bottom-nav">
+  <button class="btn outline" id="prevPage">
+    ← Артқа
+  </button>
+
+  <span id="pageIndicator">1 / 16</span>
+
+  <button class="btn primary" id="nextPage">
+    Келесі →
+  </button>
+</div>
+
+</main>
+
+<!-- ОҢ ЖАҚ МӘЗІР -->
+
+<aside class="sidebar">
+  <div class="sidebar-logo">
+    📖 ABAI LITERATURE
+  </div>
+
+  <nav id="sidebarNav">
+    <button class="nav-btn active" data-page="0">
+      <span>🏠</span><span class="nav-label">Басты бет</span>
+    </button>
+
+    <button class="nav-btn" data-page="1">
+      <span>📚</span><span class="nav-label">Абай және қара сөз</span>
+    </button>
+
+    <button class="nav-btn" data-page="2">
+      <span>💡</span><span class="nav-label">Негізгі идея</span>
+    </button>
+
+    <button class="nav-btn" data-page="3">
+      <span>①</span><span class="nav-label">Бірінші шарт</span>
+    </button>
+
+    <button class="nav-btn" data-page="4">
+      <span>②</span><span class="nav-label">Екінші шарт</span>
+    </button>
+
+    <button class="nav-btn" data-page="5">
+      <span>③</span><span class="nav-label">Үшінші шарт</span>
+    </button>
+
+    <button class="nav-btn" data-page="6">
+      <span>④</span><span class="nav-label">Төртінші шарт</span>
+    </button>
+
+    <button class="nav-btn" data-page="7">
+      <span>⑤</span><span class="nav-label">Бесінші шарт</span>
+    </button>
+
+    <button class="nav-btn" data-page="8">
+      <span>⑥</span><span class="nav-label">Алтыншы шарт</span>
+    </button>
+
+    <button class="nav-btn" data-page="9">
+      <span>▶️</span><span class="nav-label">YouTube</span>
+    </button>
+
+    <button class="nav-btn" data-page="10">
+      <span>📜</span><span class="nav-label">Конспект</span>
+    </button>
+
+    <button class="nav-btn" data-page="11">
+      <span>👥</span><span class="nav-label">Қатысушылар</span>
+    </button>
+
+    <button class="nav-btn" data-page="12">
+      <span>🎤</span><span class="nav-label">Ауызша сұрақ</span>
+    </button>
+
+    <button class="nav-btn" data-page="13">
+      <span>🧠</span><span class="nav-label">Жеке тест</span>
+    </button>
+
+    <button class="nav-btn" data-page="14">
+      <span>🏆</span><span class="nav-label">3 командалық ойын</span>
+    </button>
+
+    <button class="nav-btn" data-page="15">
+      <span>🎓</span><span class="nav-label">Қорытынды</span>
+    </button>
+  </nav>
+
+  <div class="sidebar-bottom">
+    <div id="sidebarScores"></div>
+    <strong>BY DARKHAN</strong>
+  </div>
+</aside>
+
+</div>
+</body>
+</html>
